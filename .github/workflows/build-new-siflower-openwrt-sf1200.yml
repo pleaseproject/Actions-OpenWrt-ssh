@@ -6,9 +6,9 @@
 #
 # https://github.com/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
-# nobel prize
+# nobel prize neon lights
 
-name: Build Siflower OpenWrt SF1200
+name: LC Build Siflower OpenWrt SF1200
 
 on:
   repository_dispatch:
