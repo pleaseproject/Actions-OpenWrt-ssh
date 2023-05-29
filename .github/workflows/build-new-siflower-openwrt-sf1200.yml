@@ -6,9 +6,9 @@
 #
 # https://github.com/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
-#
+# nobel prize neon lights
 
-name: Build Siflower OpenWrt SF1200
+name: LC Build Siflower OpenWrt SF1200
 
 on:
   repository_dispatch:
@@ -29,9 +29,9 @@ env:
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: false
-  TZ: Asia/Shanghai
+  UPLOAD_WETRANSFER: true
+  UPLOAD_RELEASE: true
+  TZ: America/New_York
 
 jobs:
   build:
@@ -58,8 +58,8 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git config --global user.name "maxmib"
-        git config --global user.email "maxmib@qq.com" 
+        git config --global user.name "pleaseproject"
+        git config --global user.email "thepleaseproject@gmail.com" 
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
         cp configs/config-siflower-18.x.yml /workdir/openwrt/
